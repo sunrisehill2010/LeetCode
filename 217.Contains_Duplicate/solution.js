@@ -1,7 +1,7 @@
-var containsDuplicate = function (nums) {
-    var numSet = new Set();
+let containsDuplicate = function (nums) {
+    let numSet = new Set();
 
-    for (var i = 0; i < nums.length; i++) {
+    for (let i = 0; i < nums.length; i++) {
         if (numSet.has(nums[i])) {
             return true;
         }

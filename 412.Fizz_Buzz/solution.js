@@ -1,7 +1,7 @@
-var fizzBuzz = function (n) {
-    var result = [];
+let fizzBuzz = function (n) {
+    let result = [];
 
-    for (var i = 1; i <= n; i++) {
+    for (let i = 1; i <= n; i++) {
         if (i % 15 === 0) {
             result.push('FizzBuzz')
         } else if (i % 3 === 0) {

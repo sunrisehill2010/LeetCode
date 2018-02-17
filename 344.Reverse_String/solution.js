@@ -1,8 +1,8 @@
-var reverseString = function (s) {
-    var result = "";
+let reverseString = function (s) {
+    let result = "";
 
-    var len = s.length;
-    for (var i = 0; i < len; i++) {
+    let len = s.length;
+    for (let i = 0; i < len; i++) {
         result = result.concat(s[len - i - 1])
     }
 

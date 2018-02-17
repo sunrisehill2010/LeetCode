@@ -3,7 +3,7 @@ let isInOneRow = function (map, word) {
         return false;
     }
 
-    let groupSet = new Set;
+    let groupSet = new Set();
     for (let c of word) {
         groupSet.add(map.get(c));
     }
@@ -16,7 +16,7 @@ let findWords = function (words) {
         "asdfghjklASDFGHJKL",
         "zxcvbnmZXCVBNM"];
 
-    let map = new Map;
+    let map = new Map();
     for (let i = 0; i < rows.length; i++) {
         for (let j = 0; j < rows[i].length; j++) {
             map.set(rows[i].charAt(j), i);

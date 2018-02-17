@@ -4,7 +4,7 @@ function TreeNode(val) {
 }
 
 let traverseTree = function (result, path, root) {
-    if (root == null) {
+    if (!root) {
         return;
     }
 
