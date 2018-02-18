@@ -1,6 +1,5 @@
 let judgeCircle = function (moves) {
-    let x = 0;
-    let y = 0;
+    let [x, y] = [0, 0];
 
     for (let move of moves) {
         switch (move) {

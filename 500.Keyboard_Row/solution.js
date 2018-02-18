@@ -1,5 +1,5 @@
 let isInOneRow = function (map, word) {
-    if (map == null || word == null) {
+    if (!map || !word) {
         return false;
     }
 
