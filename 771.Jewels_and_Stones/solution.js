@@ -1,17 +1,12 @@
-let isJewel = function (stone, jewels) {
-    for (let jewel of jewels) {
-        if (stone === jewel) {
-            return true;
-        }
+let numJewelsInStones = function (J, S) {
+    let jewelSet = new Set();
+    for (let jewel of J) {
+        jewelSet.add(jewel);
     }
 
-    return false;
-};
-
-let numJewelsInStones = function (J, S) {
     let num = 0;
     for (let stone of S) {
-        if (isJewel(stone, J)) {
+        if (jewelSet.has(stone)) {
             num++;
         }
     }
