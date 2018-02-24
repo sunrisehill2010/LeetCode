@@ -4,7 +4,7 @@ let reverse = function (x) {
     }
 
     const INT32_MAX = 2147483647; //2 ** 31 - 1
-    const INT32_MIN = -2147483648; //-2 ** 31;
+    const INT32_MIN = -2147483648; //-2 ** 31
 
     if (x === 0 || x > INT32_MAX || x <= INT32_MIN) {
         return 0;
